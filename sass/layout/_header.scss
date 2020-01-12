@@ -1,0 +1,38 @@
+.header-wrapper_full {
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  width: 100%;
+}
+
+.custom-menu {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0.5em;
+
+  .menu-gunnar-menu-container {
+
+    #main-menu {
+      margin: 0;
+      padding: 0.8em;
+      height: 100vh;
+      display: flex;
+      list-style: none;      
+      flex-direction: column;
+
+      li:first-child {
+        height: 100%;
+      }
+
+      li {
+        text-align: right
+      }
+
+      li > a{
+        text-decoration: none; 
+      }
+    }
+  }
+}
