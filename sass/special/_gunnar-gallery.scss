@@ -1,0 +1,38 @@
+.wp-block-gallery {
+  padding: 1em;
+}
+
+
+.blocks-gallery-item {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-in, translate 1.4s ease-in;
+}
+
+.blocks-gallery-item.fade-in {
+  opacity: 1;
+}
+
+
+.image-shift__01 {
+  margin-top: 10vh;
+  transform: matrix(0.8,0,0,0.8,0,0);
+}
+
+.image-shift__02 {
+  transform: matrix(0.9,0,0,0.9,0,50);
+}
+
+.image-shift__03 {
+  margin-bottom: 20vh;
+  transform: matrix(0.7,0,0,0.7,0,0);
+}
+
+.image-shift__04 {
+  transform: matrix(0.6,0,0,0.6,0,-150);
+}
+
+
+
+
+

@@ -124,10 +124,12 @@ add_action( 'widgets_init', 'gunnar_floral_widgets_init' );
 function gunnar_floral_scripts() {
 	wp_enqueue_style( 'gunnar-floral-style', get_stylesheet_uri() );
 	wp_enqueue_script( 'gunnar-floral-main', get_template_directory_uri() . '/dist/bundle.js', array(), '20200110', true );
+	wp_enqueue_script( 'jQuery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js', array(), '1.0', true);
 
+	
 	// Load Fonts
 	wp_enqueue_style('gunnar-customfont', get_stylesheet_directory_uri() . '/stylesheet.css', true);
-
+	
 	wp_enqueue_script( 'gunnar-floral-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'gunnar-floral-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
@@ -137,6 +139,19 @@ function gunnar_floral_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'gunnar_floral_scripts' );
+
+
+/**
+ * Enqueue Scroll Magic
+ */
+function scroll_magic_scripts(){
+	wp_enqueue_script( 'scrollMagic', 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js', array(), '1.0', true);
+	wp_enqueue_script( 'scrollMagicIndicators', 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js', array(), '1.0', true);
+
+	wp_enqueue_script( 'scrollMagicMain', get_template_directory_uri() . '/js/scrollMagic.js', array(), '20200113', true );
+}
+
+add_action('wp_enqueue_scripts', 'scroll_magic_scripts');
 
 /**
  * Implement the Custom Header feature.
