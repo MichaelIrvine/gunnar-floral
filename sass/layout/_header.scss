@@ -3,10 +3,16 @@
   z-index: 999;
   display: flex;
   width: 100%;
+  pointer-events: none;
 }
 
 .custom-logo {
   width: 200px;
+
+  .custom-logo-link {
+    pointer-events: all;
+  }
+  
 }
 
 .custom-menu {
@@ -15,6 +21,7 @@
   display: flex;
   justify-content: flex-end;
   margin: 0;
+  
 
   .menu-gunnar-menu-container {
 
@@ -38,6 +45,7 @@
       li > a{
         text-decoration: none;
         font-size: 2em;
+        pointer-events: all;
       }
     }
   }
