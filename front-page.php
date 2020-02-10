@@ -20,7 +20,7 @@ get_header();
 
 ?>
 
-<div class="front-page_background-contrainer">
+<div class="front-page_background-container">
   <video autoplay playsinline muted loop class="front-page_video">
     <source src="<?php echo $fp_video; ?>" type="video/mp4">
   </video>

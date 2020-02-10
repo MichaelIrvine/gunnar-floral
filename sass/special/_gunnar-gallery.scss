@@ -2,6 +2,10 @@
   padding: 1em;
 }
 
+.wp-block-gallery:first-of-type {
+  margin-top: 12vh;
+}
+
 
 .blocks-gallery-item {
   opacity: 0;
@@ -15,21 +19,42 @@
 
 
 .image-shift__01 {
-  margin-top: 10vh;
-  transform: matrix(0.8,0,0,0.8,0,0);
+  transform: scale(0.9);
 }
 
 .image-shift__02 {
-  transform: matrix(0.9,0,0,0.9,0,50);
+  transform: scale(1);
 }
 
 .image-shift__03 {
-  margin-bottom: 20vh;
-  transform: matrix(0.7,0,0,0.7,0,0);
+  transform: scale(0.8);
 }
 
 .image-shift__04 {
-  transform: matrix(0.6,0,0,0.6,0,-150);
+  transform: scale(0.7);
+}
+
+.image-shift__05 {
+  transform: scale(1);
+}
+
+.image-shift__06 {
+  transform: scale(0.9);
+}
+
+.image-shift__07 {
+  transform: scale(1);
+}
+
+.image-shift__08 {
+  transform: scale(0.8);
+}
+
+.image-shift__09 {
+  transform: scale(0.9);
+}
+.image-shift__10 {
+  transform: scale(1);
 }
 
 
