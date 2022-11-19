@@ -18,7 +18,7 @@
     "babel-loader": "^8.0.6",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "webpack": "^4.41.5",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.12"
   },
   "dependencies": {
     "bounds.js": "^1.0.4"
